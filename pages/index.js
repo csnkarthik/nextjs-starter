@@ -10,6 +10,8 @@ export default function Home() {
           const response = await fetch('/api/1.0/weather');
           const newData = await response.json();
           setData(newData);
+
+          console.log(newData);
       };
 
       fetchData();
