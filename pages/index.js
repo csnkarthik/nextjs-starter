@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
       const fetchData = async () => {
-          const response = await fetch('/api/weatherapi/1.0/weather');
+          const response = await fetch('/api/1.0/weather');
           const newData = await response.json();
           setData(newData);
       };
