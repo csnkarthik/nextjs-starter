@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
-          
+
       - name: Install packages
         run: sudo apt-get install -y apt-utils
   
@@ -39,7 +39,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "./" # Built app content directory - optional
+          output_location: "/" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env: 
           IS_STATIC_EXPORT: true
