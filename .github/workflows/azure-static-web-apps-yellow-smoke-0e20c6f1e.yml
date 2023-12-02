@@ -19,6 +19,15 @@ jobs:
         with:
           submodules: true
           lfs: false
+          
+      - name: Install packages
+        run: sudo apt-get install -y apt-utils
+  
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
